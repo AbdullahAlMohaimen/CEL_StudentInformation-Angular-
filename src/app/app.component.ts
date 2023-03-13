@@ -25,17 +25,22 @@ export class AppComponent {
   studentEmail: string = '';
   studentPhoneNo: string = '';
 
-  selectDepartment (event: any) {
-    this.studentDepartment = event.target.value;
+  selectDepartment (dept: any) {
+    this.studentDepartment = dept.target.value;
   }
-  selectSemester (event: any) {
-    this.studentSemester = event.target.value;
+  selectSemester (sem: any) {
+    this.studentSemester = sem.target.value;
   }
-  selectGender (event: any) {
-    this.studentGender = event.target.value;
+  selectGender (gen: any) {
+    this.studentGender = gen.target.value;
   }
-  selectReligion (event: any) {
-    this.studentReligion = event.target.value;
+  selectReligion (rel: any) {
+    this.studentReligion = rel.target.value;
+  }
+
+  emailGenarate(email:any)
+  {
+    this.studentEmail=email+'@aust.edu';
   }
 
   public StudentInformation: any =[
